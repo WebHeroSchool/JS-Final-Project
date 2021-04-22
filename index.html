@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Find a bug</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <title>"Найди баг"</title>
 </head>
-<body class="body">
-    <nav class="nav" id="nav">
-        <h1 class="nav__title">Выберите уровень сложности:</h1>
-        <h2 class="nav__subtitle">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</h2>
-        <form name="form" class="select-difficulty">
-            <label class="label" for="label__easy">
-                <input class="radio label__easy" id="label__easy" type="radio" name="diff" value="easy">
-                <p class="label__text_easy" id="checked__easy">Простой</p>
+<body class="container">
+    <nav class="menu" id="level-menu">
+        <h2 class="title">Выберите уровень сложности:</h2>
+        <h3 class="subtitle">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</h3>
+        <div class="difficulty-levels">
+            <label class="level level_active" for="simple" id="label-simple">
+                <input class="level__simple" type="button" name="simple" value="Простой" id="simple">
             </label>
-            <label class="label" for="label__medium">
-                <input class="radio label__medium" id="label__medium" type="radio" name="diff" value="medium">
-                <p class="label__text_medium" id="checked__medium">Средний</p>
+            <label class="level" for="average" id="label-average">
+                <input class="level__average" type="button" name="average" value="Средний" id="average">
             </label>
-            <label class="label" for="label__hard">
-                <input class="radio label__hard" id="label__hard" type="radio" name="diff" value="hard">
-                <p class="label__text_hard" id="checked__hard">Сложный</p>
+            <label class="level" for="difficult" id="label-difficult">
+                <input class="level__difficult" type="button" name="difficult" value="Сложный" id="difficult">
             </label>
-            <input class="select-difficulty__start-game" type="button" value="Начать игру" id="start-game">
-        </form>
+        </div>
+        <input class="start-button" type="button" name="start" value="Начать игру" id="button">
+        <div class="pictures" id="card-pictures">
+            <img class="bottom-card" src="./img/card.png">
+            <img class="top-card" src="./img/card.png">
+        </div>
     </nav>
-    <script src="./script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

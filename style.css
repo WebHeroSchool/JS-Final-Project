@@ -1,0 +1,109 @@
+.container {
+  background: url(./img/background.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  max-width: 1340px;
+  min-width: 320px;
+  min-height: 1024px;
+  margin: auto;
+}
+
+.menu {
+  margin: 130px 100px 0;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 8px;
+  font: normal bold 57px/67px "Roboto";
+}
+
+.subtitle {
+  color: #fff;
+  margin: 0 0 60px 0;
+  font: normal bold 19px/22px "Roboto";
+}
+
+.difficulty-levels {
+  margin-bottom: 113px;
+  position: relative;
+}
+
+.level {
+  display: flex;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.level__simple,
+.level__average,
+.level__difficult {
+  background: none;
+  border: none;
+  color: #fff;
+  font: normal bold 50px/59px "Roboto";
+  margin: 0;
+  outline: none;
+  padding-left: 48px;
+}
+
+.level__simple:hover,
+.level__average:hover,
+.level__difficult:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.level:visited::before,
+.level:hover::before,
+.level:active::before,
+.level_active:before {
+  background: url(./img/rectangle.png) no-repeat;
+  background-size: cover;
+  border: none;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 0;
+  top: 15px;
+  position: absolute;
+}
+
+.start-button {
+  background: #d62b2e;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font: normal bold 32px/37px "Roboto";
+  margin: 0;
+  height: 95px;
+  width: 352px;
+  outline: none;
+  padding: 0;
+}
+
+.start-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.pictures {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+}
+
+.bottom-card {
+  height: 341px;
+  width: 218px;
+  transform: rotate(11.9deg);
+}
+
+.top-card {
+  height: 341px;
+  width: 218px;
+  position: relative;
+  right: 45px;
+  top: 20px;
+  transform: rotate(39.26deg);
+}
