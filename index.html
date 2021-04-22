@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Find a bug</title>
+</head>
+<body class="body">
+    <nav class="nav" id="nav">
+        <h1 class="nav__title">Выберите уровень сложности:</h1>
+        <h2 class="nav__subtitle">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</h2>
+        <form name="form" class="select-difficulty">
+            <label class="label" for="label__easy">
+                <input class="radio label__easy" id="label__easy" type="radio" name="diff" value="easy">
+                <p class="label__text_easy" id="checked__easy">Простой</p>
+            </label>
+            <label class="label" for="label__medium">
+                <input class="radio label__medium" id="label__medium" type="radio" name="diff" value="medium">
+                <p class="label__text_medium" id="checked__medium">Средний</p>
+            </label>
+            <label class="label" for="label__hard">
+                <input class="radio label__hard" id="label__hard" type="radio" name="diff" value="hard">
+                <p class="label__text_hard" id="checked__hard">Сложный</p>
+            </label>
+            <input class="select-difficulty__start-game" type="button" value="Начать игру" id="start-game">
+        </form>
+    </nav>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
