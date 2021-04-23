@@ -107,3 +107,78 @@
   top: 20px;
   transform: rotate(39.26deg);
 }
+
+.card-wrapper {
+  background: url(./img/card.png) no-repeat;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  height: 341px;
+  width: 218px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card-wrapper_hover:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  transform: rotate(-3.08deg) translateY(-15px);
+  transition: 0.4s ease;
+}
+
+.cards-backside {
+  background: url(./img/card.png) no-repeat;
+  height: 341px;
+  width: 218px;
+  position: absolute;
+}
+
+.looser-card {
+  background: url(./img/game-over-card.png) no-repeat;
+  backface-visibility: hidden;
+  height: 341px;
+  width: 218px;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.winner-card {
+  background: url(./img/card-with-bug.png) no-repeat;
+  backface-visibility: hidden;
+  height: 341px;
+  width: 218px;
+  position: absolute; 
+  transform: rotateY(180deg);
+}
+
+.card-click {
+  transform: rotateY(180deg);
+}
+
+.three-card-field {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 341px;
+  width: 702px;
+  margin: auto;
+  perspective: 1000px;
+}
+
+.six-card-field {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 706px;
+  width: 702px;
+  margin: auto;
+  perspective: 1000px;
+}
+
+.ten-card-field {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 706px;
+  width: 1186px;
+  margin: auto;
+  perspective: 1000px;
+}
