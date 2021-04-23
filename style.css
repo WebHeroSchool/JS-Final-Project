@@ -182,3 +182,140 @@
   margin: auto;
   perspective: 1000px;
 }
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+	.container {
+  min-height: 650px;
+  max-height: 650px;
+  max-width: 1100px;
+  margin: auto;
+ }
+
+ .menu { 
+  margin: auto;
+ }
+
+ .title {
+  font: normal bold 50px/60px "Roboto";
+ }
+ 
+ .level__simple,
+ .level__average,
+ .level__difficult {
+  margin: 0;
+  font: normal bold 43px/52px "Roboto";
+ }
+ 
+ .start-button {
+  margin: 0 0 20px 0;
+  height: 90px;
+  width: 330px;
+  font: normal bold 28px/33px "Roboto";
+ }
+ 
+ .pictures {
+  top: 40%;
+  right: 8%;
+ }
+
+ .bottom-card,
+ .top-card {
+  height: 269px;
+  width: 173px;
+ }
+
+ .difficulty-levels {
+  margin-bottom: 100px;
+ }
+
+ .card-wrapper,
+ .cards-backside,
+ .looser-card,
+ .winner-card {
+ 	background-size: 175px 271px;
+ 	height: 269px;
+ 	width: 173px;
+ }
+
+ .three-card-field {
+  height: 269px;
+  width: 567px;
+ }
+ 
+ .six-card-field {
+ 	height: 562px;
+ 	width: 567px;
+ }
+ 
+ .ten-card-field {
+ 	height: 562px;
+  width: 961px;
+ }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.container {
+  min-height: 768px;
+  max-height: 1024px;
+  max-width: 1000px;
+ }
+
+	.menu { 
+  margin: auto 50px;
+ }
+
+ .title {
+  margin: 0 0 8px 0;
+  font: normal bold 50px/60px "Roboto";
+ }
+ 
+ .level__simple,
+ .level__average,
+ .level__difficult {
+ 	margin: 0;
+  font: normal bold 43px/52px "Roboto";
+ }
+ 
+ .start-button {
+  margin: 0 0 20px 0;
+  height: 90px;
+  width: 340px;
+  font: normal bold 28px/33px "Roboto";
+ }
+
+ .difficulty-levels {
+  margin-bottom: 70px;
+ }
+
+ .pictures {
+  display: none;
+ }
+
+ .difficulty-levels {
+  margin-bottom: 100px;
+ }
+
+ .card-wrapper,
+ .cards-backside,
+ .looser-card,
+ .winner-card {
+ 	background-size: 146px 232px;
+ 	height: 230px;
+ 	width: 145px;
+ }
+
+ .three-card-field {
+  height: 230px;
+  width: 483px;
+ }
+ 
+ .six-card-field {
+ 	height: 484px;
+ 	width: 483px;
+ }
+ 
+ .ten-card-field {
+ 	height: 484px;
+  width: 760px;
+ }
+}
